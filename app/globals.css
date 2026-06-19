@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F8F9FF;
+  --foreground: #1A1A2E;
+
+  --color-primary: #4F46E5;
+  --color-primary-dark: #3730A3;
+  --color-secondary: #F97316;
+  --color-ink: #1A1A2E;
+  --color-surface: #11102B;
+  --color-muted: #6B7280;
+  --color-muted-bg: #F3F4F6;
+  --color-border: #E5E7EB;
+  --color-success: #10B981;
+  --color-card: #FFFFFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+}
+
+.circuit-bg {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(249, 115, 22, 0.12), transparent 35%);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
