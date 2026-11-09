@@ -1,12 +1,17 @@
 # Edodwaja Website
 
-Full-featured LMS website for Edodwaja, built with Next.js 15 (App Router) + Tailwind v4,
-sharing the same content as the mobile app and designed to share the same Supabase backend.
+A learning-platform (LMS) and maker-store website for Edodwaja, where students learning robotics, coding and IoT can browse courses, take quizzes, read tech news and buy electronics kits.
+
+It is the web companion to the [MakersFlow mobile app](https://github.com/ashrithpatha/MakersFlow-App). Both use the same Supabase backend, so an account created on the website works in the app and vice versa.
+
+## Tech stack
+
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Supabase (Auth + PostgreSQL)
 
 ## Connect to your Supabase project (shared with the mobile app)
 
-1. Copy `.env.local.example` to `.env.local`
-2. Fill in:
+1. Create a file named `.env.local` in the project root
+2. Add:
    ```
    NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-public-key
